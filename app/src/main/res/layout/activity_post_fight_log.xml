@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.PostFightLogActivity"
+    android:id="@+id/main"
+    android:background="@color/screen_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:trackThickness="2dp"
+            app:trackCornerRadius="2dp"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="?attr/layoutcolor">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:padding="5dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="?attr/backgroundcolor"
+                android:src="@drawable/ic_back"
+                android:tint="#596C84"
+                tools:ignore="ContentDescription,UnusedAttribute,UseAppTint" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/bold_roboto"
+                android:text="you vs user"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:gravity="center"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                app:tabTextAppearance="@style/TabAppearance"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabSelectedTextColor="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                app:tabTextColor="@color/colorPrimary"
+                android:background="?attr/layoutcolor">
+
+                <com.google.android.material.tabs.TabItem
+                    android:icon="@drawable/ic_add_log"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save result"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:icon="@drawable/ic_approve_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 vs 1"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:icon="@drawable/ic_approve_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Club vs Club"/>
+
+            </com.google.android.material.tabs.TabLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_save_you_win"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cover">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_round"
+                android:backgroundTint="#F0F2F6"
+                tools:ignore="UnusedAttribute">
+
+                <TextView
+                    android:id="@+id/select_game"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:fontFamily="@font/bold_roboto"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Game name"
+                    android:textColor="#8B8D93"
+                    android:textSize="18sp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <ImageView
+                    android:src="@drawable/ic_back"
+                    android:rotation="270"
+                    android:layout_marginEnd="5dp"
+                    android:padding="5dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:tint="?attr/texttwocolor"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/vsll"
+                android:background="@drawable/btn_round"
+                android:backgroundTint="#F0F2F6"
+                tools:ignore="UnusedAttribute">
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/bold_roboto"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="1 vs 1"
+                    android:textColor="#4e4f54"
+                    android:textSize="18sp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <ImageView
+                    android:src="@drawable/ic_back"
+                    android:rotation="270"
+                    android:layout_marginEnd="5dp"
+                    android:padding="5dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:tint="?attr/texttwocolor"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_round"
+                android:backgroundTint="#F0F2F6"
+                tools:ignore="UnusedAttribute">
+
+                <EditText
+                    android:id="@+id/edt_total_rounds"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:fontFamily="@font/bold_roboto"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:hint="Rounds played"
+                    android:textColor="#4e4f54"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_round"
+                android:backgroundTint="#F0F2F6"
+                tools:ignore="UnusedAttribute">
+
+                <EditText
+                    android:id="@+id/edt_won_rounds"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:fontFamily="@font/bold_roboto"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:hint="Rounds won"
+                    android:textColor="#4e4f54"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_select_my_group"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_round"
+                android:backgroundTint="#F0F2F6"
+                tools:ignore="UnusedAttribute"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/select_my_group"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:fontFamily="@font/bold_roboto"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="My club"
+                    android:textColor="#8B8D93"
+                    android:textSize="18sp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <ImageView
+                    android:src="@drawable/ic_back"
+                    android:rotation="270"
+                    android:layout_marginEnd="5dp"
+                    android:padding="5dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:tint="?attr/texttwocolor"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_select_opponent_group"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_round"
+                android:backgroundTint="#F0F2F6"
+                tools:ignore="UnusedAttribute"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/select_opponent_group"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:fontFamily="@font/bold_roboto"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Opponent's club"
+                    android:textColor="#8B8D93"
+                    android:textSize="18sp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <ImageView
+                    android:src="@drawable/ic_back"
+                    android:rotation="270"
+                    android:layout_marginEnd="5dp"
+                    android:padding="5dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:tint="?attr/texttwocolor"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_round"
+                android:backgroundTint="#F0F2F6"
+                tools:ignore="UnusedAttribute">
+
+                <EditText
+                    android:id="@+id/edt_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:fontFamily="@font/bold_roboto"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:hint="About the fight"
+                    android:textColor="#4e4f54"
+                    android:textSize="18sp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+               <!-- <ImageView
+                    android:src="@drawable/ic_back"
+                    android:rotation="270"
+                    android:layout_marginEnd="5dp"
+                    android:padding="5dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:tint="?attr/texttwocolor"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText" />-->
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/post"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/btn_round"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/bold_roboto"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:stateListAnimator="@null"
+                android:text="Save"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_fight_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_fight_club_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

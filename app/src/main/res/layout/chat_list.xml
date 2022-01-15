@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="8dp"
+    android:background="?attr/layoutcolor"
+    android:layout_height="wrap_content"
+    tools:ignore="Overdraw">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dp"
+        android:src="@drawable/avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/bold_roboto"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/verified"
+                        android:layout_width="15.5dp"
+                        android:layout_height="15.5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/ic_verify"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/admin"
+                        android:layout_width="15.5dp"
+                        android:layout_height="15.5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/ic_admin"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_g_engagement"
+                        android:layout_width="38dp"
+                        android:layout_height="15.5dp"
+                        android:background="@drawable/ic_engagement_bg"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp">
+
+                        <ImageView
+                            android:layout_width="15.5dp"
+                            android:layout_height="15.5dp"
+                            android:src="@drawable/ic_engagement"/>
+
+                        <TextView
+                            android:id="@+id/txt_post_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/bold_roboto"
+                            android:text="000"
+                            android:textColor="#F42407"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            tools:ignore="ContentDescription,HardcodedText"
+                            android:layout_marginEnd="3dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_g_skill"
+                        android:layout_width="38dp"
+                        android:layout_height="15.5dp"
+                        android:background="@drawable/ic_skill_bg"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp">
+
+                        <ImageView
+                            android:layout_width="15.5dp"
+                            android:layout_height="15.5dp"
+                            android:src="@drawable/ic_skill"/>
+
+                        <TextView
+                            android:id="@+id/txt_fight_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/bold_roboto"
+                            android:text="000"
+                            android:textColor="#B71BEE"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            tools:ignore="ContentDescription,HardcodedText"
+                            android:layout_marginEnd="3dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:fontFamily="@font/bold_roboto"
+                        android:textColor="?attr/texttwocolor"
+                        android:textSize="13sp" />
+
+                    <!--<TextView
+                        android:id="@+id/count"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:ellipsize="end"
+                        android:layout_marginStart="8dp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:background="@drawable/circle"
+                        android:fontFamily="@font/bold_roboto"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                app:tint="#4CAF50"
+                android:id="@+id/imageView2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:visibility="gone"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/circle"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_delete_msg"
+                tools:ignore="ContentDescription"
+                android:layout_marginRight="10dp"
+                app:tint="#DDDFEB"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

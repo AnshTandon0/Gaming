@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".menu.PrivacyActivity"
+    tools:ignore="Overdraw">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="?attr/backgroundcolor"
+        android:src="@drawable/ic_back"
+        android:tint="#596C84"
+        tools:ignore="ContentDescription,UnusedAttribute,UseAppTint" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fontFamily="@font/regular"
+        android:text="Terms &amp; Policy"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="Autofill,HardcodedText,TextFields"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:background="?attr/layoutcolor"
+        android:paddingTop="8dp"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextAppearance="@style/TabAppearance"
+        app:tabTextColor="@color/colorPrimary">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_privacy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/tabLayout"
+        android:padding="15dp"
+        android:visibility="visible">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:overScrollMode="never"
+            android:scrollbarThumbVertical="@null">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p1"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p2"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p3"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="1. Consent"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p4"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="2. Information we collect"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p5"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p6"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p7"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="3. How we use your information"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p8"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/p9"
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/p10"
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/p11"
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/p12"
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/p13"
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/p14"
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p15"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="Flexster follows a standard procedure of using log files. These files log visitors when they visit website &amp; app. All hosting companies do this as part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website &amp; app, and gathering demographic information."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p17"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="Like any other website &amp; app, Flexster uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website &amp; app that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our website &amp; app content based on visitors' browser type and/or other information."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p19"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p20"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="Third-party ad servers or ad networks use technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Flexster, which are sent directly to users' browsers and apps. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites &amp; apps that you use."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p22"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p23"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="Flexster's Privacy Policy does not apply to other advertisers, websites or apps. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites &amp; apps."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p26"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p27"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p29"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="Request that a business that sells a consumer's personal data, not sell the consumer's personal data."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p31"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p32"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/p33"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/p34"
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/p35"
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/p36"
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/p37"
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/p38"
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/p39"
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+                </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/regular"
+                android:text="@string/p40"
+                android:textColor="@color/chat_msg_text"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/regular"
+                android:text="10. Children's Information"
+                android:textColor="@color/chat_msg_text"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/regular"
+                android:text="@string/p42"
+                android:textColor="@color/chat_msg_text"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/regular"
+                android:text="@string/p43"
+                android:textColor="@color/chat_msg_text"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/regular"
+                android:text="@string/p44"
+                android:textColor="@color/chat_msg_text"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/regular"
+                android:text="@string/p45"
+                android:textColor="@color/chat_msg_text"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+                </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_terms_conditions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/tabLayout"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:overScrollMode="never"
+            android:scrollbarThumbVertical="@null">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="1. Terms"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="0dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="By accessing the Flexster App &amp; Website, you are agreeing to be bound by these Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this App. The materials contained in this App &amp; Website are protected by copyright and trade mark law."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="2. Use License"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="Permission is granted to temporarily download one copy of the materials on Flexster's App &amp; Website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="- Modify or copy the materials."
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="- Use the materials for any commercial purpose or for any public display."
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="- Attempt to reverse engineer any software contained on Flexster's Website."
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="- Remove any copyright or other proprietary notations from the materials."
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="- Transferring the materials to another person or 'mirror' the materials on any other server."
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="This will let Flexster to terminate upon violations of any of these restrictions. Upon termination, your viewing right will also be terminated and you should destroy any downloaded materials in your possession whether it is printed or electronic format."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="3. Disclaimer"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="All the materials on Flexster’s App &amp; Website are provided 'as is'. Flexster makes no warranties, may it be expressed or implied, therefore negates all other warranties. Furthermore, Flexster does not make any representations concerning the accuracy or reliability of the use of the materials on its App &amp; Website or otherwise relating to such materials or any sites linked to this App &amp; Website."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="4. Limitations"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="Flexster or its suppliers will not be held accountable for any damages that will arise with the use or inability to use the materials on Flexster’s App &amp; Website, even if Flexster or an authorized representative of this App &amp; Website has been notified, orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations on implied warranties or limitations of liability for incidental damages, these limitations may not apply to you."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="5. Revisions and Errata"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="The materials appearing on Flexster’s App &amp; Website may include technical, typographical, or photographic errors. Flexster will not promise that any of the materials in this App &amp; Website are accurate, complete, or current. Flexster may change the materials contained on its App &amp; Website at any time without notice. Flexster does not make any commitment to update the materials."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="6. Links"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="Flexster has not reviewed all of the sites linked to its App &amp; Website and is not responsible for the contents of any such linked site. The presence of any link does not imply endorsement by Flexster of the App. The use of any linked website is at the user’s own risk."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="7. App Terms of Use Modifications"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="Flexster may revise these Terms of Use for its App &amp; Website at any time without prior notice. By using this App &amp; Website, you are agreeing to be bound by the current version of these Terms and Conditions of Use."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="8. Account Termination"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="Flexster reverses full rights to close any user account, club or content posted by user at any moment without providing any notice or explanation. We strongly advise our users not to practice any actions listed below to avoid their account and club termination. Flexster is an app where users of the app upload and share all the contents and they are fully responsible for what they upload, publish and share. Flexster is not responsible for any content uploaded, published or shared by the users of the app. If you have any issue with any content uploaded, published or shared by any Flexster user - feel free to reach us at support@flexster.app"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="- Do not discuss racism of any kind."
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="- Do not upload, publish or share any copyrighted contents."
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="- Do not discuss religion, politics or mass gathering events."
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="- Do not post or share content about mental or physical disabilities."
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="- No posting porn, drug related or other explicit content."
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="- Do not insult, threat, abuse or personally attack other users."
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="- Do not use racist content, explicit content, disrespectful content, offensive names, photos, videos."
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/regular"
+                        android:text="- Do not upload, publish or share any copyrighted contents."
+                        android:textColor="@color/chat_msg_text"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />-->
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="9. Your Privacy"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="Please read our Privacy Policy listed below."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="10. Governing Law"
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/regular"
+                    android:text="Any claim related to Flexster's App &amp; Website shall be governed by the laws of bd without regards to its conflict of law provisions."
+                    android:textColor="@color/chat_msg_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold_roboto"
+        android:text="Terms &amp; Policy"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+       tools:ignore="ContentDescription,HardcodedText" />-->
+
+    <!--<WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />-->
+
+</RelativeLayout>

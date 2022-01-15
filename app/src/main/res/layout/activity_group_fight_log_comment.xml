@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg_color"
+    tools:ignore="Overdraw"
+    android:id="@+id/main_linear">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="?attr/layoutcolor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="5dp">
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:trackThickness="2dp"
+            app:trackCornerRadius="2dp"
+            android:indeterminate="true" />
+
+        <TextView
+            android:id="@+id/topName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold_roboto"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="?attr/backgroundcolor"
+            android:padding="5dp"
+            android:tint="#596C84"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,UnusedAttribute,UseAppTint" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="?attr/backgroundcolor"
+            android:padding="6dp"
+            android:src="@drawable/ic_for"
+            android:tint="#596C84"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,UnusedAttribute,UseAppTint" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="?attr/layoutcolor"
+            android:layout_above="@+id/commentll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_weight="1"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:id="@+id/main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/ll_main_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/gradient_win_bg"
+                        android:padding="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/fight_user_bg">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_trophy1"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/fight_trophy_bg"
+                                    android:layout_alignParentRight="true"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_fight_trophy"
+                                        android:padding="7dp"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/dpiv1"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:src="@drawable/avatar" />
+
+                                    <TextView
+                                        android:id="@+id/user1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bold_roboto"
+                                        android:gravity="center"
+                                        android:text="user1"
+                                        android:textColor="?attr/textcolor"
+                                        android:textSize="16sp"
+                                        tools:ignore="ContentDescription,HardcodedText" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="15dp"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/verified1"
+                                            android:layout_width="15.5dp"
+                                            android:layout_height="15.5dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="5dp"
+                                            android:src="@drawable/ic_verify"
+                                            android:visibility="gone"
+                                            tools:ignore="ContentDescription" />
+
+                                        <ImageView
+                                            android:id="@+id/admin1"
+                                            android:layout_width="15.5dp"
+                                            android:layout_height="15.5dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="5dp"
+                                            android:src="@drawable/ic_admin"
+                                            android:visibility="gone"
+                                            tools:ignore="ContentDescription" />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_g_engagement1"
+                                            android:layout_width="38dp"
+                                            android:layout_height="15.5dp"
+                                            android:layout_marginStart="5dp"
+                                            android:background="@drawable/ic_engagement_bg"
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:layout_width="15.5dp"
+                                                android:layout_height="15.5dp"
+                                                android:src="@drawable/ic_engagement" />
+
+                                            <TextView
+                                                android:id="@+id/txt_post_count1"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginEnd="3dp"
+                                                android:fontFamily="@font/bold_roboto"
+                                                android:gravity="center"
+                                                android:text="000"
+                                                android:textColor="#DC271B"
+                                                android:textSize="10sp"
+                                                android:textStyle="bold"
+                                                tools:ignore="ContentDescription,HardcodedText" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_g_skill1"
+                                            android:layout_width="38dp"
+                                            android:layout_height="15.5dp"
+                                            android:layout_marginStart="5dp"
+                                            android:background="@drawable/ic_skill_bg">
+
+                                            <ImageView
+                                                android:layout_width="15.5dp"
+                                                android:layout_height="15.5dp"
+                                                android:src="@drawable/ic_skill" />
+
+                                            <TextView
+                                                android:id="@+id/txt_fight_count1"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginEnd="3dp"
+                                                android:fontFamily="@font/bold_roboto"
+                                                android:gravity="center"
+                                                android:text="000"
+                                                android:textColor="#BB1AF3"
+                                                android:textSize="10sp"
+                                                android:textStyle="bold"
+                                                tools:ignore="ContentDescription,HardcodedText" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_c_engagement1"
+                                            android:layout_width="38dp"
+                                            android:layout_height="15.5dp"
+                                            android:background="@drawable/ic_skill_bg"
+                                            android:orientation="horizontal"
+                                            android:layout_marginStart="5dp"
+                                            android:visibility="gone">
+
+                                            <ImageView
+                                                android:layout_width="15.5dp"
+                                                android:layout_height="15.5dp"
+                                                android:src="@drawable/ic_club_rank" />
+
+                                            <TextView
+                                                android:id="@+id/txt_club_count1"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginEnd="3dp"
+                                                android:fontFamily="@font/bold_roboto"
+                                                android:gravity="center"
+                                                android:text="000"
+                                                android:textColor="#B71BEE"
+                                                android:textSize="10sp"
+                                                android:textStyle="bold"
+                                                tools:ignore="ContentDescription,HardcodedText" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bold_roboto"
+                                android:text="  vs  "
+                                android:textColor="#ffffff"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:ignore="ContentDescription,HardcodedText"
+                                android:layout_gravity="center_vertical"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/fight_user_bg">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_trophy2"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/fight_trophy_bg"
+                                    android:layout_alignParentRight="true"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_fight_trophy"
+                                        android:padding="7dp"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/dpiv2"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:src="@drawable/avatar" />
+
+                                    <TextView
+                                        android:id="@+id/user2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bold_roboto"
+                                        android:gravity="center"
+                                        android:text="user1"
+                                        android:textColor="?attr/textcolor"
+                                        android:textSize="16sp"
+                                        tools:ignore="ContentDescription,HardcodedText" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="15dp"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/verified2"
+                                            android:layout_width="15.5dp"
+                                            android:layout_height="15.5dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="5dp"
+                                            android:src="@drawable/ic_verify"
+                                            android:visibility="gone"
+                                            tools:ignore="ContentDescription" />
+
+                                        <ImageView
+                                            android:id="@+id/admin2"
+                                            android:layout_width="15.5dp"
+                                            android:layout_height="15.5dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="5dp"
+                                            android:src="@drawable/ic_admin"
+                                            android:visibility="gone"
+                                            tools:ignore="ContentDescription" />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_g_engagement2"
+                                            android:layout_width="38dp"
+                                            android:layout_height="15.5dp"
+                                            android:layout_marginStart="5dp"
+                                            android:background="@drawable/ic_engagement_bg"
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:layout_width="15.5dp"
+                                                android:layout_height="15.5dp"
+                                                android:src="@drawable/ic_engagement" />
+
+                                            <TextView
+                                                android:id="@+id/txt_post_count2"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginEnd="3dp"
+                                                android:fontFamily="@font/bold_roboto"
+                                                android:gravity="center"
+                                                android:text="000"
+                                                android:textColor="#DC271B"
+                                                android:textSize="10sp"
+                                                android:textStyle="bold"
+                                                tools:ignore="ContentDescription,HardcodedText" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_g_skill2"
+                                            android:layout_width="38dp"
+                                            android:layout_height="15.5dp"
+                                            android:layout_marginStart="5dp"
+                                            android:background="@drawable/ic_skill_bg">
+
+                                            <ImageView
+                                                android:layout_width="15.5dp"
+                                                android:layout_height="15.5dp"
+                                                android:src="@drawable/ic_skill" />
+
+                                            <TextView
+                                                android:id="@+id/txt_fight_count2"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginEnd="3dp"
+                                                android:fontFamily="@font/bold_roboto"
+                                                android:gravity="center"
+                                                android:text="000"
+                                                android:textColor="#BB1AF3"
+                                                android:textSize="10sp"
+                                                android:textStyle="bold"
+                                                tools:ignore="ContentDescription,HardcodedText" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_c_engagement2"
+                                            android:layout_width="38dp"
+                                            android:layout_height="15.5dp"
+                                            android:background="@drawable/ic_skill_bg"
+                                            android:orientation="horizontal"
+                                            android:visibility="gone">
+
+                                            <ImageView
+                                                android:layout_width="15.5dp"
+                                                android:layout_height="15.5dp"
+                                                android:src="@drawable/ic_club_rank" />
+
+                                            <TextView
+                                                android:id="@+id/txt_club_count2"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginEnd="3dp"
+                                                android:fontFamily="@font/bold_roboto"
+                                                android:gravity="center"
+                                                android:text="000"
+                                                android:textColor="#B71BEE"
+                                                android:textSize="10sp"
+                                                android:textStyle="bold"
+                                                tools:ignore="ContentDescription,HardcodedText" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/fight_score_bg"
+                            android:gravity="center"
+                            android:layout_marginTop="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp">
+
+                                <TextView
+                                    android:id="@+id/txt_category"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="1 vs 1"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/bold_roboto"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view_line"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#569C3E"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp">
+
+                                <TextView
+                                    android:id="@+id/txt_total_round"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/bold_roboto"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Rounds"
+                                    android:textSize="14sp"
+                                    android:textColor="?attr/texttwocolor"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/bold_roboto"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp">
+
+                                <TextView
+                                    android:id="@+id/txt_won"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textSize="20sp"
+                                    android:textColor="#569C3E"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/bold_roboto"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Won"
+                                    android:textSize="14sp"
+                                    android:textColor="?attr/texttwocolor"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/bold_roboto"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp">
+
+                                <TextView
+                                    android:id="@+id/txt_lost"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textSize="20sp"
+                                    android:textColor="#DA4727"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/bold_roboto"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lost"
+                                    android:textSize="14sp"
+                                    android:textColor="?attr/texttwocolor"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/bold_roboto"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_official"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/fight_user_bg"
+                            android:backgroundTint="#bbeeab"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:src="@drawable/ic_official"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Official Result"
+                                android:textSize="11sp"
+                                android:textColor="#259900"
+                                android:fontFamily="@font/bold_roboto"
+                                android:gravity="center"
+                                android:layout_marginLeft="5dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_unofficial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/fight_user_bg"
+                            android:backgroundTint="#FFBBB0"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:src="@drawable/ic_unofficial"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Unofficial Result"
+                                android:textSize="11sp"
+                                android:textColor="#E42002"
+                                android:fontFamily="@font/bold_roboto"
+                                android:gravity="center"
+                                android:layout_marginLeft="5dp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_game_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Game Name"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/bold_roboto"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/txt_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Time"
+                            android:textSize="14sp"
+                            android:textColor="#A4ffffff"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/bold_roboto"
+                            android:gravity="center"
+                            android:layout_marginTop="3dp"/>
+
+                    </LinearLayout>
+
+                    <com.tylersuehr.socialtextview.SocialTextView
+                        android:fontFamily="@font/bold_roboto"
+                        app:mentionColor="@color/colorPrimary"
+                        app:emailColor="@color/colorPrimary"
+                        app:phoneColor="@color/colorPrimary"
+                        app:hashtagColor="@color/colorPrimary"
+                        app:selectedColor="@color/colorPrimary"
+                        app:urlColor="@color/colorPrimary"
+                        android:textColor="?attr/textcolor"
+                        android:id="@+id/text"
+                        android:text="Description"
+                        android:textSize="16sp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:id="@+id/details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/likeLayout"
+                            android:layout_margin="8dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginEnd="8dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="21dp">
+
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/thumb"
+                                    android:src="@drawable/ic_thumb"
+                                    android:layout_width="21dp"
+                                    android:layout_height="wrap_content"
+                                    android:contentDescription="TODO"
+                                    tools:ignore="ContentDescription,HardcodedText" />
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/love"
+                                    android:src="@drawable/ic_love"
+                                    android:layout_width="21dp"
+                                    android:layout_height="wrap_content"
+                                    android:contentDescription="TODO"
+                                    tools:ignore="ContentDescription,HardcodedText" />
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/laugh"
+                                    android:src="@drawable/ic_laugh"
+                                    android:layout_width="21dp"
+                                    android:layout_height="wrap_content"
+                                    android:contentDescription="TODO"
+                                    tools:ignore="ContentDescription,HardcodedText" />
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/wow"
+                                    android:src="@drawable/ic_wow"
+                                    android:layout_width="21dp"
+                                    android:layout_height="wrap_content"
+                                    android:contentDescription="TODO"
+                                    tools:ignore="ContentDescription,HardcodedText" />
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/sad"
+                                    android:src="@drawable/ic_sad"
+                                    android:layout_width="21dp"
+                                    android:layout_height="wrap_content"
+                                    android:contentDescription="TODO"
+                                    tools:ignore="ContentDescription,HardcodedText" />
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/angry"
+                                    android:src="@drawable/ic_angry"
+                                    android:layout_width="21dp"
+                                    android:layout_height="wrap_content"
+                                    android:contentDescription="TODO"
+                                    tools:ignore="ContentDescription,HardcodedText" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/noLikes"
+                                android:textSize="12sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bold_roboto"
+                                android:textColor="?attr/texttwocolor"
+                                tools:ignore="SmallSp" />
+
+                            <TextView
+                                android:layout_marginStart="4dp"
+                                android:textSize="12sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bold_roboto"
+                                android:text="Reacts"
+                                android:textColor="?attr/texttwocolor"
+                                tools:ignore="HardcodedText,SmallSp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout"
+                            android:visibility="gone"
+                            android:layout_margin="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/commentLayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/noComments"
+                                    android:textSize="12sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bold_roboto"
+                                    android:textColor="?attr/texttwocolor"
+                                    tools:ignore="SmallSp" />
+
+                                <TextView
+                                    android:textSize="12sp"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bold_roboto"
+                                    android:text="Comments"
+                                    android:textColor="?attr/texttwocolor"
+                                    tools:ignore="HardcodedText,SmallSp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/viewsLayout"
+                                android:layout_marginStart="8dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/noViews"
+                                    android:textSize="12sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bold_roboto"
+                                    android:textColor="?attr/texttwocolor"
+                                    tools:ignore="SmallSp" />
+
+                                <TextView
+                                    android:layout_marginStart="4dp"
+                                    android:textSize="12sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bold_roboto"
+                                    android:text="Views"
+                                    android:textColor="?attr/texttwocolor"
+                                    tools:ignore="HardcodedText,SmallSp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/line"
+                        android:alpha="0.5"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:background="?attr/texttwocolor"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"/>
+
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="DisableBaselineAlignment">
+
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/likeButton"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:ignore="ObsoleteLayoutParam,UseCompoundDrawables">
+
+                                <ImageView
+                                    android:id="@+id/like_img"
+                                    android:src="@drawable/ic_fight_react"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:contentDescription="TODO"
+                                    tools:ignore="ContentDescription,HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/like_text"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bold_roboto"
+                                    android:text="React"
+                                    android:textColor="?attr/texttwocolor"
+                                    android:textSize="15sp"
+                                    tools:ignore="ContentDescription,HardcodedText" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/likeButtonTwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <ImageView
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:contentDescription="TODO"
+                                    android:src="@drawable/ic_fight_react"
+                                    tools:ignore="ContentDescription,HardcodedText" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="6dp"
+                                    android:fontFamily="@font/bold_roboto"
+                                    android:text="React"
+                                    android:textColor="?attr/texttwocolor"
+                                    android:textSize="15sp"
+                                    tools:ignore="ContentDescription,HardcodedText" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/comment"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:src="@drawable/ic_fight_opinion"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                app:tint="?attr/texttwocolor"
+                                android:contentDescription="TODO"
+                                tools:ignore="ContentDescription,HardcodedText" />
+
+                            <TextView
+                                android:layout_marginStart="6dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bold_roboto"
+                                android:text="Opinion"
+                                android:textColor="?attr/texttwocolor"
+                                android:textSize="15sp"
+                                tools:ignore="ContentDescription,HardcodedText" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/share"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                app:tint="?attr/texttwocolor"
+                                android:src="@drawable/ic_fight_spread"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:contentDescription="TODO"
+                                tools:ignore="ContentDescription,HardcodedText" />
+
+                            <TextView
+                                android:layout_marginStart="6dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bold_roboto"
+                                android:text="Spread"
+                                android:textColor="?attr/texttwocolor"
+                                android:textSize="15sp"
+                                tools:ignore="ContentDescription,HardcodedText" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:alpha="0.5"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:background="?attr/texttwocolor"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/comment_rv"/>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/commentll"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="?attr/backgroundcolor"
+                android:contentDescription="TODO"
+                android:padding="7dp"
+                android:src="@drawable/ic_plus"
+                app:tint="#596C84"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_round"
+                android:backgroundTint="?attr/backgroundcolor"
+                android:orientation="horizontal">
+
+                <com.hendraanggrian.appcompat.widget.SocialEditText
+                    android:id="@+id/editText_cmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@null"
+                    android:fontFamily="@font/bold_roboto"
+                    android:hint="Type an opinion..."
+                    android:maxLines="1"
+                    android:textColor="?attr/textcolor"
+                    android:textColorHint="?attr/texttwocolor"
+                    android:textSize="14sp"
+                    app:hashtagColor="@color/colorPrimary"
+                    app:mentionColor="@color/colorPrimary"
+                    app:socialFlags="hashtag|mention"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/comment_send"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_send"
+                app:tint="@color/colorPrimary"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

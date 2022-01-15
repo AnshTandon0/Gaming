@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/emoji_1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_thumb"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/emoji_2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_love"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/emoji_3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_laugh"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/emoji_4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_wow"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/emoji_5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_sad"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/emoji_6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_angry"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c6d0"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/report"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:padding="3dp"
+            android:src="@drawable/ic_reply"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:tint="#040404"
+            android:contentDescription="TODO"
+           tools:ignore="ContentDescription,HardcodedText" />
+
+        <TextView
+            android:textColor="#040404"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/bold_roboto"
+            android:text="Reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           tools:ignore="ContentDescription,HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/copy"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:padding="3dp"
+            android:src="@drawable/ic_copy"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:tint="#040404"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <TextView
+            android:textColor="#040404"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/bold_roboto"
+            android:text="Copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/delete"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:padding="3dp"
+            android:src="@drawable/ic_delete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:tint="#040404"
+            android:contentDescription="TODO"
+           tools:ignore="ContentDescription,HardcodedText" />
+
+        <TextView
+            android:textColor="#040404"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/bold_roboto"
+            android:text="Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           tools:ignore="ContentDescription,HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/download"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:padding="3dp"
+            android:src="@drawable/ic_download"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:tint="#040404"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <TextView
+            android:textColor="#040404"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/bold_roboto"
+            android:text="Download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           tools:ignore="ContentDescription,HardcodedText" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c6d0"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:textColor="#040404"
+            android:textSize="16sp"
+            android:layout_gravity="start"
+            android:fontFamily="@font/bold_roboto"
+            android:text="Time - "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_marginStart="4dp"
+            android:textColor="#040404"
+            android:textSize="16sp"
+            android:layout_gravity="start"
+            android:fontFamily="@font/bold_roboto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/maximize"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:padding="3dp"
+            android:src="@drawable/ic_maximize"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:tint="#040404"
+            android:contentDescription="TODO"
+           tools:ignore="ContentDescription,HardcodedText" />
+
+        <TextView
+            android:textColor="#040404"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/bold_roboto"
+            android:text="Full Screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           tools:ignore="ContentDescription,HardcodedText" />
+
+    </LinearLayout>
+
+</LinearLayout>

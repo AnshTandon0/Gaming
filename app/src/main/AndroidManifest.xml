@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gaming.community.flexster">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:name=".groupVideoCall.openvcall.AGApplicationVideo"
+        android:allowBackup="true"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup"
+        tools:replace="android:theme"
+        android:hardwareAccelerated="true">
+        <activity
+            android:name=".admin.GlobalAdminRequestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".group.AddStickerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".group.ClubFightLogCommentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".group.GroupFightLogCommentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chat.FightLogPostCommentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".group.PostClubFightLogActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chat.PostFightLogActivity"
+            android:exported="true" />
+        <activity
+            android:name=".post.LookinForActivity"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".admin.NewGameAddActivity"
+            android:exported="true" />
+        <activity
+            android:name=".admin.GameListActivity"
+            android:exported="true" />
+        <activity android:name=".group.JoinRequestActivity" />
+        <activity android:name=".StickersPost" />
+        <activity android:name=".SendStickerActivity" />
+        <activity android:name=".Stickers" />
+        <activity android:name=".admin.WarnGroupActivity" />
+        <activity android:name=".admin.WarnUserActivity" />
+        <activity android:name=".admin.VerificationRequestActivity" />
+        <activity android:name=".admin.ReportedPostActivity" />
+        <activity android:name=".admin.ReportedReelsActivity" />
+        <activity android:name=".admin.ReportedGroupsActivity" />
+        <activity android:name=".admin.ReportedUserActivity" />
+        <activity android:name=".admin.AdminActivity" />
+        <activity android:name=".menu.PrivacyActivity" />
+        <activity android:name=".group.AddGroupActivity" />
+        <activity android:name=".group.GroupMembersActivity" />
+        <activity android:name=".menu.EditNumberActivity" />
+        <activity android:name=".menu.EditEmailActivity" />
+        <activity android:name=".menu.EditPasswordActivity" />
+        <activity android:name=".menu.VerificationActivity" />
+        <activity android:name=".menu.SavedActivity" />
+        <activity android:name=".menu.MenuActivity" />
+        <activity android:name=".who.FollowersActivity" />
+        <activity android:name=".who.FollowingActivity" />
+        <activity android:name=".notifications.NotificationScreen" />
+        <activity android:name=".notifications.AnNotificationScreen" />
+        <activity android:name=".who.ReelLikedActivity" />
+        <activity android:name=".who.ViewedActivity" />
+        <activity android:name=".story.ChatStoryViewActivity" />
+        <activity android:name=".story.HighViewActivity" />
+        <activity android:name=".search.LocationActivity" />
+        <activity android:name=".who.LikedActivity" />
+        <activity android:name=".story.StoryViewActivity" />
+        <activity android:name=".story.AddStoryActivity" />
+        <activity android:name=".podcast.StartPodcastActivity" />
+        <activity
+            android:name=".podcast.PodcastActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".live.LiveActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".live.StartLiveActivity" />
+        <activity
+            android:name=".reel.ViewReelActivity"
+            android:theme="@style/ReelTheme" />
+        <activity android:name=".reel.ReelCommentActivity" />
+        <activity
+            android:name=".reel.ReelActivity"
+            android:theme="@style/ReelTheme" />
+        <activity android:name=".send.ImageEditingActivity" />
+        <activity android:name=".send.VideoEditingActivity" />
+        <activity android:name=".reel.PostReelActivity" />
+        <activity android:name=".reel.VideoEditActivity" />
+        <activity android:name=".send.SendToGroupActivity" />
+        <activity android:name=".send.SendToUserActivity" />
+        <activity android:name=".send.SendMediaActivity" />
+        <activity android:name=".send.MediaSelectActivity" />
+        <activity android:name=".faceFilters.FaceFilters" />
+        <activity android:name=".marketPlace.ProductDetailsActivity" />
+        <activity android:name=".marketPlace.MarketPlaceActivity" />
+        <activity android:name=".marketPlace.PostProductActivity" />
+        <activity android:name=".watchParty.StartYouTubeActivity" />
+        <activity android:name=".watchParty.StartPartyActivity" />
+        <activity
+            android:name=".watchParty.YouTubePartyActivity"
+            android:theme="@style/Party" />
+        <activity android:name=".watchParty.InviteMoreActivity" />
+        <activity android:name=".watchParty.ChangeWatchPartyActivity" />
+        <activity
+            android:name=".watchParty.WatchPartyActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
+            android:theme="@style/Party" />
+        <activity android:name=".watchParty.PartyPostActivity" />
+        <activity android:name=".watchParty.PartyPrivacyActivity" />
+        <activity android:name=".watchParty.InviteActivity" />
+        <activity android:name=".watchParty.StartWatchPartyActivity" />
+        <activity android:name=".meeting.MeetingActivity" />
+        <activity
+            android:name=".groupVideoCall.openvcall.ui.VideoGroupCallActivity"
+            android:theme="@style/FullScreenVideoTheme" />
+        <activity
+            android:name=".groupVideoCall.CallingGroupVideoActivity"
+            android:theme="@style/SplashScreen" />
+        <activity
+            android:name=".groupVideoCall.RingingGroupVideoActivity"
+            android:theme="@style/SplashScreen" />
+        <activity
+            android:name=".groupVoiceCall.RingingGroupVoiceActivity"
+            android:theme="@style/SplashScreen" />
+        <activity
+            android:name=".groupVoiceCall.CallingGroupVoiceActivity"
+            android:theme="@style/SplashScreen" />
+        <activity
+            android:name=".groupVoiceCall.openacall.ui.VoiceCallGroupActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/SplashScreen" />
+        <activity android:name=".group.GroupChatActivity" />
+        <activity android:name=".group.CommentGroupActivity" />
+        <activity android:name=".group.CreateGroupPostActivity" />
+        <activity android:name=".group.EditGroupActivity" />
+        <activity android:name=".group.GroupFragment" />
+        <activity android:name=".group.GroupProfileActivity" />
+        <activity android:name=".group.AddMemberActivity" />
+        <activity android:name=".group.StepThreeActivity" />
+        <activity android:name=".group.StepTwoActivity" />
+        <activity android:name=".group.StepOneActivity" />
+        <activity
+            android:name=".calling.VoiceChatViewActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/SplashScreen" />
+        <activity
+            android:name=".calling.VideoChatViewActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/FullScreenVideoTheme" />
+        <activity
+            android:name=".calling.RingingActivity"
+            android:theme="@style/SplashScreen" />
+        <activity
+            android:name=".calling.CallingActivity"
+            android:theme="@style/SplashScreen" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAdEyGGvB_M_9gyhkDCpldfCODuPzKuyJU" />
+
+        <activity android:name=".chat.ChatActivity" />
+        <activity android:name=".chat.CreateChatActivity" />
+        <activity android:name=".MediaViewActivity" />
+        <activity android:name=".post.CommentActivity" />
+        <activity android:name=".search.SearchActivity" />
+        <activity android:name=".search.TrendingActivity" />
+        <activity android:name=".post.CreatePostActivity" />
+        <activity android:name=".profile.UserProfileActivity" />
+        <activity android:name=".profile.EditProfileActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".emailAuth.ForgotPasswordActivity" />
+        <activity android:name=".Check" />
+        <activity android:name=".phoneAuth.RegisterActivity" />
+        <activity android:name=".phoneAuth.VerifyOTPActivity" />
+        <activity android:name=".phoneAuth.GenerateOTPActivity" />
+        <activity android:name=".emailAuth.SignUpActivity" />
+        <activity android:name=".emailAuth.LoginActivity" />
+        <activity android:name=".welcome.IntroLast" />
+        <activity android:name=".welcome.IntroActivity" />
+        <activity
+            android:name=".welcome.SplashScreenActivity"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_push_notification" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <service
+            android:name=".notifications.FirebaseMessaging"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

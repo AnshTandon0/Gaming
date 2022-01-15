@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg_color"
+    tools:context=".menu.MenuActivity"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="?attr/backgroundcolor"
+                android:padding="5dp"
+                android:src="@drawable/ic_back"
+                android:tint="#596C84"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription,UnusedAttribute,UseAppTint" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/bold_roboto"
+                android:text="Menu"
+                android:textColor="@color/colorPrimary"
+                android:textSize="43sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/market"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7.5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                app:cardCornerRadius="7dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/sell"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="MarketPlace"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/group"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/ic_clubs"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Clubs"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/saved"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="7.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/ic_saved_post"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Saved Posts"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/party"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/party"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Watch Party"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/meeting"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="7.5dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/ic_live_buddy"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Buddy Meeting"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/podcast"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                app:cardCornerRadius="7dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/podcast"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Podcast"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/night"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="start"
+                            android:contentDescription="TODO"
+                            android:src="@drawable/ic_dark_mode"
+                            tools:ignore="ContentDescription,HardcodedText" />
+
+                        <Switch
+                            android:id="@+id/nightSwitch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_marginEnd="12dp"
+                            android:layout_weight="1"
+                            tools:ignore="UseSwitchCompatOrMaterialXml"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical|end"
+                            android:gravity="end"
+                            android:fontFamily="@font/regular"
+                            android:text="Coming soon"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginStart="12dp"
+                            tools:ignore="ContentDescription,HardcodedText" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Dark Mode"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/live"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/live"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Live"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/notification"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7.5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/notification"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Notification"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/reel"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/reels"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Reels"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/camera"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7.5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/camera"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Camera"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/editImage"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/edit_image"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Photo Editor"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="?attr/menucolor"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/editVideo"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7.5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/add_video"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Video Editor"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/search"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Search"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/verify"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="7.5dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/ic_verify"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Get Verified"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/global_admin"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/ic_admin"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Global Admin"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            tools:ignore="TooManyViews"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pass"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7.5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                app:cardCornerRadius="7dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/pass"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Edit Password"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/ic_edit_phone"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Edit Number"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                app:cardCornerRadius="7dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/mail"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Edit Mail"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profile"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                android:visibility="gone"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/edit_ic"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Edit Profile"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/invite"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="7.5dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/ic_share"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Invite"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/near"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                android:elevation="1dp"
+                app:cardCornerRadius="7dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/nearby"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Near by"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/policy"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/ic_policy"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Terms &amp; Policy"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/logOut"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="7.5dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/ic_logout"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Log Out"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/admin"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/menucolor"
+                app:cardElevation="4dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/ic_admin_panel"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/bold_roboto"
+                        android:text="Admin Panel"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="18sp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/bold_roboto"
+            android:text="© Flexster"
+            android:textColor="?attr/textcolor"
+            android:textSize="20sp"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

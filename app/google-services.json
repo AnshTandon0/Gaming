@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "192426114749",
+    "project_id": "flexster-8c06a",
+    "storage_bucket": "flexster-8c06a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192426114749:android:0ce0d9a639d4c8b37901d4",
+        "android_client_info": {
+          "package_name": "com.gaming.community.flexster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192426114749-ulm8vfe223vf4dl6gih3aelpb34jdme6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gaming.community.flexster",
+            "certificate_hash": "6b090b1fe52ec4ae934e8bbce63d486e4dc5a248"
+          }
+        },
+        {
+          "client_id": "192426114749-aq9d0ipp83brbmq3k6867o9nbgba85tj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ1meZp_sOfiLfLiebl3zlBFpSk312OR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192426114749-aq9d0ipp83brbmq3k6867o9nbgba85tj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

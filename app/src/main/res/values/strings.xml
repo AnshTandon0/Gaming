@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">Flexster</string>
+
+    <!-- Privacy -->
+    <string-array name="privacy">
+        <item>Everyone</item>
+        <item>Followers</item>
+        <item>Only me</item>
+    </string-array>
+
+    <!-- PLEASE KEEP THIS App ID IN SAFE PLACE -->
+    <!-- Get your own App ID at https://dashboard.agora.io/ -->
+    <!-- After you entered the App ID, remove <##> outside of Your App ID -->
+    <string name="agora_app_id" translatable="false">c5f6d36dbfdf405e963d78e9bae2626a</string>
+
+    <!-- Obtain a temp Access Token at https://dashboard.agora.io -->
+    <!-- You will need to deploy your own token server for production release -->
+    <!-- Leave this value empty if Security keys/Token is not enabled for your project -->
+    <string name="agora_access_token" translatable="false" />
+
+    <string name="msg_no_network_connection" translatable="false">No network connection, please check the network settings</string>
+
+    <string name="bit_rate_value_with_unit" translatable="false">%d kbps</string>
+    <string name="frame_rate_value_with_unit" translatable="false">%d fps</string>
+
+    <string-array name="encryption_mode_values">
+        <item>AES-128-XTS</item>
+        <item>AES-256-XTS</item>
+    </string-array>
+
+    <string-array name="string_array_resolutions">
+        <item>160x120</item>
+        // 120P
+        <item>320x180</item>
+        // 180P
+        <item>320x240</item>
+        // 240P the default one
+        <item>640x360</item>
+        // 360P
+        <item>640x480</item>
+        // 480P
+        <item>1280x720</item>
+        // 720P
+    </string-array>
+
+    <string-array name="string_array_frame_rate">
+        <item>1</item>
+        <item>7</item>
+        <item>10</item>
+        <item>15</item>
+        // the default one
+        <item>24</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>Used</item>
+        <item>New</item>
+    </string-array>
+
+    <string-array name="cat">
+        <item>1 vs 1</item>
+        <!--<item>2 vs 2</item>
+        <item>3 vs 3</item>
+        <item>4 vs 4</item>-->
+        <item>Club vs Club</item>
+        <!--<item>Financial</item>
+        <item>Gift</item>
+        <item>Home</item>
+        <item>Others</item>-->
+    </string-array>
+
+    <string name="native_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/2247696110</string>  <!-- Paste Native Ad unit id here for admob -->
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string><!-- Paste Banner Ad unit id here for admob -->
+
+    <string name="check_ad_status" translatable="false">0</string>
+
+    <string name="msg_connection_error" translatable="false">Connection error, please check the network settings or make sure channel name/access token are valid</string>
+    <string name="verification_about" translatable="false">Verified users are real and authentic players. There is a blue check mark with their name to represent the Verified status.</string>
+    <string name="verification_admin_about" translatable="false">Global admin is a prestigious role. They have a special yellow star badge. Admins have power and responsibility to maintain peace by removing offensive players, clubs and posts. They also can award Verified badge to players and clubs.</string>
+
+    <string name="terms_of_service" translatable="false"><u>Terms &amp; Policy</u></string>
+
+    <string name="p1" translatable="false">At Flexster app and website, one of our main priorities is the privacy of our visitors and users. This Privacy Policy document contains types of information that is collected and recorded by Flexster and how we use it.</string>
+    <string name="p2" translatable="false">If you have additional questions about our Privacy Policy or want us to remove any data or content, do not hesitate to contact us at support@flexster.app</string>
+    <string name="p3" translatable="false">This Privacy Policy applies only to our online activities and is valid for visitors and users to our website and app with regards to the information that they shared and/or collected in Flexster. This policy is not applicable to any information collected offline or via channels other than this website and app.</string>
+    <string name="p4" translatable="false">By using our app and website, you hereby consent to our Privacy Policy and agree to its terms.</string>
+    <string name="p5" translatable="false">The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</string>
+    <string name="p6" translatable="false">If you contact us directly for any query, to verify your identity or to become global admin - we may receive additional information about you such as your name, photo, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide willingly.</string>
+    <string name="p7" translatable="false">When you register for an Account, we may ask for your contact information, including items such as name, games you play, contact links, address, email address, and phone number.</string>
+    <string name="p8" translatable="false">We use the information we collect in various ways, including to:</string>
+    <string name="p9" translatable="false">- Provide, operate, and maintain our website and app.</string>
+    <string name="p10" translatable="false">- Improve, personalize, and expand our website and app.</string>
+    <string name="p11" translatable="false">- Understand and analyze how you use our website and app.</string>
+    <string name="p12" translatable="false">- Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website/app, and for marketing and promotional purposes.</string>
+    <string name="p13" translatable="false">- Send SMS.</string>
+    <string name="p14" translatable="false">- Find and prevent fraud.</string>
+    <string name="p15" translatable="false">4. Log files</string>
+
+    <string name="p17" translatable="false">5. Cookies and Beacons:</string>
+
+    <string name="p19" translatable="false">6. Advertising Partners Privacy Policies</string>
+    <string name="p20" translatable="false">You may consult this list to find the Privacy Policy for each of the advertising partners of Flexster.</string>
+
+    <string name="p22" translatable="false">Note that Flexster has no access to or control over these cookies that are used by third-party advertisers.</string>
+    <string name="p23" translatable="false">7. Third Party Privacy Policies</string>
+
+        <string name="p26" translatable="false">8. CCPA Privacy Rights (Do Not Sell My Personal Information)</string>
+    <string name="p27" translatable="false">Under the CCPA, among other rights, California consumers have the right to:</string>
+
+    <string name="p29" translatable="false">Request that a business delete any personal data about the consumer that a business has collected.</string>
+
+    <string name="p31" translatable="false">If you make a request, we have a few months to respond to you. If you would like to exercise any of these rights, please contact us support@flexster.app</string>
+    <string name="p32" translatable="false">9. GDPR Data Protection Rights</string>
+    <string name="p33" translatable="false">We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</string>
+    <string name="p34" translatable="false">- The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service</string>
+    <string name="p35" translatable="false">- The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</string>
+    <string name="p36" translatable="false">- The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</string>
+    <string name="p37" translatable="false">- The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</string>
+    <string name="p38" translatable="false">- The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</string>
+    <string name="p39" translatable="false">- The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</string>
+    <string name="p40" translatable="false">If you make a request, we have a few months to respond to you. If you would like to exercise any of these rights, please contact us at support@flexster.app</string>
+
+    <string name="p42" translatable="false">Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</string>
+    <string name="p43" translatable="false">Flexster does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website &amp; app, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</string>
+    <string name="p44" translatable="false">11. Content removal policy</string>
+    <string name="p45" translatable="false">Flexster is an app where users of the app upload and share all the contents and they are fully responsible for what they upload, publish and share. Flexster is not responsible for any content uploaded, published or shared by the users of the app. If you have any issue with any content uploaded, published or shared by any Flexster user - feel free to reach us at support@flexster.app and we will take a look at it and remove the content from Flexster app if your claim is legitimate.</string>
+
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Player Options"
+        android:textSize="20sp"
+        android:textColor="@color/chat_msg_text"
+        android:fontFamily="@font/regular"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_co_owner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign Co-Owner"
+        android:textSize="16sp"
+        android:textColor="@color/chat_msg_text"
+        android:fontFamily="@font/regular"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_mod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign Mod"
+        android:textSize="16sp"
+        android:textColor="@color/chat_msg_text"
+        android:fontFamily="@font/regular"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_senior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign Senior"
+        android:textSize="16sp"
+        android:textColor="@color/chat_msg_text"
+        android:fontFamily="@font/regular"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign Member"
+        android:textSize="16sp"
+        android:textColor="@color/chat_msg_text"
+        android:fontFamily="@font/regular"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_vip_guest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign VIP-Guest"
+        android:textSize="16sp"
+        android:textColor="@color/chat_msg_text"
+        android:fontFamily="@font/regular"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_gust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign Guest"
+        android:textSize="16sp"
+        android:textColor="@color/chat_msg_text"
+        android:fontFamily="@font/regular"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_scrimster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign Scrimster"
+        android:textSize="16sp"
+        android:textColor="@color/chat_msg_text"
+        android:fontFamily="@font/regular"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_kick_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kick Player"
+        android:textSize="16sp"
+        android:textColor="@color/chat_msg_text"
+        android:fontFamily="@font/regular"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

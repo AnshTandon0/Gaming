@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/screen_bg_color"
+    android:layout_height="match_parent"
+    tools:context=".search.TrendingActivity"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="?attr/layoutcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:padding="5dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="?attr/backgroundcolor"
+                android:src="@drawable/ic_back"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:tint="#596C84"
+                android:contentDescription="TODO"
+               tools:ignore="ContentDescription,HardcodedText" />
+
+            <LinearLayout
+                android:background="@drawable/btn_round"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Global Posts"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/bold_roboto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="Autofill,HardcodedText"
+                    android:layout_marginRight="12dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/gamelist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:textSize="12sp"
+                        android:textColor="?attr/texttwocolor"
+                        android:fontFamily="@font/bold_roboto"
+                        android:background="@drawable/btn_round"
+                        android:backgroundTint="?attr/backgroundcolor"
+                        android:paddingRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="8dp"
+                        android:id="@+id/all"
+                        android:paddingBottom="8dp"
+                        android:text="All"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       tools:ignore="ContentDescription,HardcodedText" />
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:trackThickness="2dp"
+        app:trackCornerRadius="2dp"
+        android:indeterminate="true" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!--            <androidx.core.widget.NestedScrollView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/nested">-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/post"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"/>
+<!--            </androidx.core.widget.NestedScrollView>-->
+
+
+
+            <Button
+                android:stateListAnimator="@null"
+                android:background="@drawable/btn_round"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Load More"
+                android:fontFamily="@font/bold_roboto"
+                android:textColor="#fff"
+                android:visibility="gone"
+                android:id="@+id/more"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+               tools:ignore="ContentDescription,HardcodedText" />
+
+
+            <TextView
+                android:textSize="20sp"
+                android:textColor="?attr/texttwocolor"
+                android:alpha="0.5"
+                android:id="@+id/nothing"
+                android:visibility="gone"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/bold_roboto"
+                android:gravity="center"
+                android:text="Nothing Found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               tools:ignore="ContentDescription,HardcodedText" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

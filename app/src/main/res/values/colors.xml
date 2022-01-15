@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#D20000</color>
+    <color name="colorAccent">#094a9f</color>
+    <!-- Intro -->
+    <color name="indicator">#D20000</color>
+    <color name="indicator_def">#ff6767</color>
+    <!-- Call -->
+    <color name="localBackground">#020001</color>
+    <color name="remoteBackground">#0f0f0f</color>
+
+    <color name="chat_msg_text">#212830</color>
+
+    <color name="screen_bg_color">#e6e7ec</color>
+
+    <color name="transparent">#ffcccc</color>
+
+</resources>
