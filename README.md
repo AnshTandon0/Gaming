@@ -1,2 +1,2 @@
 # Gaming
-### This is a gaming app .
+### This is a gaming app developed in Java
